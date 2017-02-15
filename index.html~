@@ -1,0 +1,33 @@
+<html>
+  
+  <head>
+  <link rel="icon" href="Logo.png">
+  <title>NickelOS</title>
+  <link rel="stylesheet" type="text/css" href="nickel.css">
+  </head>
+
+  <body>
+    <div id="head">
+      <img id="logo" src="Logo.png" alt="Ni logo" width="75" height="75">
+      
+      <h1>NickelOS</h1>
+      
+      <ul id="navi">
+        <li><a href="http://www.nickelos.org/index.html"><button class="button">Home</button></a></li>
+        <li><a href="http://www.nickelos.org/about.html"><button class="button" id="current">About</button></li>
+        <li><a href="http://www.nickelos.org/faq.html"><button class="button">FAQs</button></li>
+      </ul>
+    </div>
+    <center>
+      <p id="temp">
+      NickelOS is an Distro built from the ground up for development.
+      <br>
+      With a clean fast interface, and all the development tools a modern team will need, 
+      NickelOS is your one stop shop for a customizable Linux/GNU Distro.<br>
+      Unfortunately, there are no builds ready for the public, but please check back soon.<br>
+      If you have any questions, please email us at <a href="mailto:info@nickelOS.org">info@nickelos.org</a>
+      <p>
+    </center>
+    <p id="copyright">&copy; 2016 NickelOS Project</p>
+  </body>
+</html>

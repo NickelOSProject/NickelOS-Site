@@ -1,0 +1,90 @@
+html{
+  height: 100%;
+}
+body {
+    background: Silver; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#00134d, White); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00134d, White); /* For Opera 11.1 to 12.0 */
+    background: linear-gradient(to bottom, #00134d, White); /* Standard syntax */
+}
+.button {
+    background-color: whitesmoke;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #00134d;
+    transition-duration: 0.5s;  
+}
+
+#current {
+  border: 2px solid #9a9a9a;
+}
+
+.button:hover {
+  background-color: #0033cc; /* Green */
+  color: whitesmoke;
+}
+
+h1 {
+  margin-top: 20;
+  color: whitesmoke;
+  float: left;
+}
+
+h2 {
+  color: seashell;
+}
+
+#form {
+
+}
+
+#title {
+  background-color: darkgray;
+}
+
+#head {
+  height: 85px;
+  background: #00134d;
+}
+
+#navi {
+  list-style-type: none;
+  display: inline-block;
+  top: 0;
+  bottom: 0
+}
+
+#logo {
+  margin: 5;
+  float: left;
+}
+
+
+li {
+  top: 0;
+  bottom: 0;
+  margin-left: 10;
+  font-size: 250%;
+  float: left;
+}
+
+p {
+  font-size: 120%;
+}
+
+#temp {
+  font-size: 200%;
+}
+
+#copyright {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #00134d;
+  vertical-align: bottom;
+
+}
