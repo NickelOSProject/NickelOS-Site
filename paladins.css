@@ -6,6 +6,7 @@ body {
     background: -webkit-linear-gradient(#00734c, #fdbe14); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#00734c, #fdbe14); /* For Opera 11.1 to 12.0 */
     background: linear-gradient(to bottom, #00734c, #fdbe14); /* Standard syntax */
+    background-attachment:fixed;
 }
 .button {
     background-color: whitesmoke;
@@ -15,7 +16,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     color: #00134d;
-    transition-duration: 0.5s;  
+    transition-duration: 0.5s;
 }
 
 #current {
