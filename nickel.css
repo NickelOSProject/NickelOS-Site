@@ -1,31 +1,6 @@
 html{
   height: 100%;
 }
-body {
-    background: Silver; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#00134d, White); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#00134d, White); /* For Opera 11.1 to 12.0 */
-    background: linear-gradient(to bottom, #00134d, White); /* Standard syntax */
-}
-.button {
-    background-color: whitesmoke;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    color: #00134d;
-    transition-duration: 0.5s;  
-}
-
-#current {
-  border: 2px solid #9a9a9a;
-}
-
-.button:hover {
-  background-color: #0033cc; /* Green */
-  color: whitesmoke;
-}
 
 h1 {
   margin-top: 20;
@@ -34,41 +9,71 @@ h1 {
 }
 
 h2 {
-  color: seashell;
-}
-
-#form {
-
-}
-
-#title {
-  background-color: darkgray;
+  color: black;
 }
 
 #head {
   height: 85px;
-  background: #00134d;
+  background: #0099ff;
+  position: relative;
+  border-radius: 5px;
 }
 
-#navi {
+div.title {
+  position: absolute;
+  height: 90%;
+  top: 5%;
+  left:.5%;
+}
+img.logo {
+  float:left;
+}
+div.nav{
+  position: absolute;
+	height: 100%;
+	right: .5%;
+}
+
+ul.nav {
   list-style-type: none;
   display: inline-block;
-  top: 0;
-  bottom: 0
 }
-
-#logo {
-  margin: 5;
-  float: left;
-}
-
 
 li {
+  padding-left: 4px;
   top: 0;
   bottom: 0;
   margin-left: 10;
   font-size: 250%;
   float: left;
+}
+
+.button {
+  background-color: #0099ff; /* Cyan */
+  border:none;
+  border-bottom:2px solid #33334d;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: whitesmoke;
+  transition-duration: 1.5s;
+  text-decoration: none;
+}
+
+#current {
+  border: 2px solid #9a9a9a;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: whitesmoke;
+  color: #00134d;
+}
+
+.button:hover {
+  background-color: whitesmoke;
+  color: #00134d;
 }
 
 p {
