@@ -1,47 +1,99 @@
 html{
-  height: 100%;
-}
-body {
-    background: Silver; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#00134d, White); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#00134d, White); /* For Opera 11.1 to 12.0 */
-    background: linear-gradient(to bottom, #00134d, White); /* Standard syntax */
+	height: 100%;
 }
 
-.button {
-    background-color: whitesmoke;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    color: #00134d;
-    transition-duration: 0.5s;  
+h2 {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
 }
 
-.button:hover {
-  background-color: #0033cc; /* Green */
-  color: whitesmoke;
+#head {
+	height: 85px;
+	background: #0099ff;
+	position: relative;
+	border-radius: 5px;
 }
 
-h1 {
-  font-size: 300%;
-
+#nav{
+	background: #0099ff;
+	position:fixed;
+	left:0; top:0; bottom: 0;
+	width: 15%;
 }
 
-div {
-  background-color: lightgray;
-  width: 75%;
-  height: 99%;
+#main{
+	position:absolute;
+	left:25%; top:0; bottom: 0;
+	width: auto;
+}
+
+div.title {
+	background: pink;
+	width: 80%;
+	margin: 5% auto;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  float:left;  
-  margin-left: 20;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border: 2px solid whitesmoke;
+	border-radius: 50%;
+}
+
+ul.nav {
+	list-style-type: none;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	padding: 0;
+	transform: translateY(-50%);
+	overflow: auto;
+}
+
+li a {
+	display: block;
+	background-color: #0099ff; /* Cyan */
+	text-align: center;
+	color: whitesmoke;
+	transition-duration: 1.5s;
+	text-decoration: none;
+	font-size: 250%;
+}
+
+li a.button{
+	border-bottom:2px solid #33334d;
+}
+
+#current {
+	background-color: whitesmoke;
+	color: #00134d;
+	border-bottom: none;
+}
+
+li a:hover:not(#current) {
+	background-color: whitesmoke;
+	color: #00134d;
 }
 
 p {
-  margin-right: 20;
+	font-size: 120%;
+}
+
+#temp {
+	font-size: 200%;
+}
+
+#copyright {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #00134d;
+	vertical-align: bottom;
+
 }

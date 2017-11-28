@@ -25,8 +25,8 @@ div.title {
   top: 5%;
   left:.5%;
 }
-img.logo {
-  float:left;
+img{
+  border-radius: 50%;
 }
 div.nav{
   position: absolute;
