@@ -1,12 +1,15 @@
 html{
 	height: 100%;
+	background: #272b27;
 }
 
-h2 {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	color: black;
+p{
+	color:white;
+}
+
+h2{
+	color: pink;
+	margin: 0;
 }
 
 #head {
@@ -23,26 +26,22 @@ h2 {
 	width: 15%;
 }
 
-#main{
-	position:absolute;
-	left:25%; top:0; bottom: 0;
-	width: auto;
+div.name{
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 div.title {
-	background: pink;
-	width: 80%;
-	margin: 5% auto;
+	position: relative;
+	width: 100%;
 }
 
-img {
+img.selfie{
 	position: relative;
+	width: 100%;
+	height: auto;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	border: 2px solid whitesmoke;
-	border-radius: 50%;
 }
 
 ul.nav {
@@ -62,7 +61,8 @@ li a {
 	color: whitesmoke;
 	transition-duration: 1.5s;
 	text-decoration: none;
-	font-size: 250%;
+	font-size: 150%;
+	cursor: pointer;
 }
 
 li a.button{
@@ -88,12 +88,50 @@ p {
 	font-size: 200%;
 }
 
-#copyright {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	color: #00134d;
-	vertical-align: bottom;
-
+/*Main content*/
+/*this will be the container for each individual section*/
+div.section{
+	position: relative;
+	background: #272b27;
+	border-color: #10d33b;
+	border-width: thick;
+	border-style: dashed;
+	margin-left: 15%;
+	width: 85%;
 }
+
+/*First section with (Contact)*/
+div.divider{
+	position: relative;
+	width: 2%;
+	left: 49%;
+	text-align: center;
+}
+
+div.left{
+	position: absolute;
+	width:48%;
+	left:0;
+	text-align: right;
+}
+
+div.right{
+	position: absolute;
+	width:48%;
+	right:0;
+	text-align: left;
+}
+
+div.right a:link{
+	color: aqua;
+}
+div.right a:hover{
+	background-color: aqua;
+	color: #272b27;
+}
+div.right a:visited{
+	color: #009999;
+}
+
+
+/*End of first section*/
