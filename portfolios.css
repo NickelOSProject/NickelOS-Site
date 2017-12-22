@@ -5,11 +5,12 @@ html{
 
 p{
 	color:white;
+	font-size: 120%;
 }
 
 h2{
-	color: pink;
-	margin: 0;
+	color: whitesmoke;
+	margin: 0
 }
 
 #head {
@@ -80,10 +81,6 @@ li a:hover:not(#current) {
 	color: #00134d;
 }
 
-p {
-	font-size: 120%;
-}
-
 #temp {
 	font-size: 200%;
 }
@@ -96,42 +93,102 @@ div.section{
 	border-color: #10d33b;
 	border-width: thick;
 	border-style: dashed;
+	margin-top: 1%;
 	margin-left: 15%;
 	width: 85%;
 }
 
 /*First section with (Contact)*/
-div.divider{
+div#contacts .divider{
 	position: relative;
 	width: 2%;
 	left: 49%;
 	text-align: center;
 }
 
-div.left{
+div#contacts .left{
 	position: absolute;
 	width:48%;
 	left:0;
 	text-align: right;
 }
 
-div.right{
+div#contacts .right{
 	position: absolute;
 	width:48%;
 	right:0;
 	text-align: left;
 }
 
-div.right a:link{
+a{
 	color: aqua;
 }
-div.right a:hover{
+a:hover{
 	background-color: aqua;
 	color: #272b27;
 }
-div.right a:visited{
+a:visited{
 	color: #009999;
 }
 
-
 /*End of first section*/
+
+/*Skills section*/
+div#skills{
+	min-height: 150px;
+}
+div#skills #left{
+	margin: 0,0;
+	width: 33%;
+	text-align: center;
+	font-size: 120%;
+	color: whitesmoke;
+}
+
+div#skills .skill {
+	border: 2px solid #9a9a9a;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  color: #00134d;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+div#skills #center{
+	position: absolute;
+	width: 33%;
+	left: 33%;
+	top: 0;
+	bottom:0;
+	border-color: #10d33b;
+	border-width: thick;
+	border-right-style: dashed;
+	border-left-style: dashed;
+	text-align: center;
+	font-size: 120%;
+	color: whitesmoke;
+}
+
+div#skills #right {
+	position: absolute;
+	width: 33%;
+	right:0;
+	top: 1%;
+	bottom: 1%;
+}
+
+div#skills .operatingSystem {
+	display: inline-block;
+}
+
+div#skills .operatingSystem p{
+	width: 100%;
+	text-align: center;
+}
+
+div#skills .operatingSystem img{
+	margin: auto;
+	display: block;
+}
+
+/*End of Skills Section*/
