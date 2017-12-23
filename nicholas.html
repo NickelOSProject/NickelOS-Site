@@ -9,25 +9,34 @@
 	<body>
 		<!--Left Navigation Bar-->
 		<div id="nav">
-			<div class="title">
+			<div id="title">
 				<img class="selfie" src="Resources/Nicholas.png" alt="Nicholas Anderson">
-				<div class="name">
-					<h2>Nicholas</h2>
-					<h2>Anderson</h2>
-				</div>
+				<h3>Nicholas Anderson</h3>
 			</div>
-			<ul class="nav">
-				<li><a class="button">🏠Take Me Back</a></li>
-				<li><a class="button">📹About Me</a></li>
-				<li><a class="button">💻Projects</a></li>
+			<ul>
+				<li><a class="button" id="current" href="#bio">👤About Me</a></li>
+				<li><a class="button" href="#projects">👨‍💻Projects</a></li>
+				<li><a class="button" href="#contacts">✉️Contacts</a></li>
+
 			</ul>
 		</div>
 
-		<!--Contact info-->
-		<div class="section" id="contacts">
+		<!--Bio-->
+		<div class="section" id="bio">
+			<p>
+				I am a Computer Scientist with a passion for low level programming, speed, and elegance.<br>
+				I am working on my B.S. in Computer Science at George Mason, and look to continue my education, if given the oportunity.
+				<br>My other interests include photography, mountain biking, and anything with friends.
+			</p>
+		</div>
+		<!--End of Bio-->
+
+		<!--About Me-->
+		<div class="section" id="about">
 			<div class="left">
 				<p>Email</p>
 				<p>Resume</p>
+				<p>Github (NickelOS)</p>
 				<p>Github</p>
 				<p>Stack Overflow</p>
 				<p>linkedin</p>
@@ -35,7 +44,8 @@
 			<div class="right">
 				<p><a href="mailto:nicholas@nickelos.org">Nicholas@NickelOS.org</a></p>
 				<p><a href="Nicholas_Anderson_Resume.pdf">Nicholas_Anderson_Resume.pdf</a></p>
-				<p><a href="http://www.github.com/justalilbitnerdy">justalilbitnerdy</a></p>
+				<p><a href="https://github.com/NickelOSProject/">NickelOSProject</a></p>
+				<p><a href="https://github.com/justalilbitnerdy?tab=overview&from=2017-07-01&to=2017-07-31">justalilbitnerdy</a></p>
 				<p><a href="http://www.stackoverflow.com/users/3566700/justalilbitnerdy">justalilbitnerdy</a></p>
 				<p><a href="http://www.linkedin.com/in/kandern">kandern</a></p>
 			</div>
@@ -45,9 +55,10 @@
 				<p>|</p>
 				<p>|</p>
 				<p>|</p>
+				<p>|</p>
 			</div>
 		</div>
-		<!--End of Contacts-->
+		<!--End of About Me-->
 
 		<!--Skills-->
 		<div class="section" id="skills">
@@ -94,9 +105,106 @@
 		</div>
 		<!--End of Skills-->
 
-		<div class="section">
-			Hi
+		<!--Projects-->
+		<div class="section" id="projects">
+			<h3>Projects</h3>
+			<div class="project">
+				<a href="https://github.com/NickelOSProject/PengBot">
+					<h4>PengBot</h4>
+					<img src="Resources/PengBot.png" alt="PengBot">
+					<p>Pengbot is an IRC Chatbot designed for Twitch for managing polls, givaways, and moderating chat</p>
+				</a>
+			</div>
+			<div class="project">
+				<a href="https://github.com/justalilbitnerdy/PiLock">
+					<h4>PiLock</h4>
+					<p>PiLock is a door lock built for the Raspberry pi.
+						It uses an electronic deadbolt, and a keycard reader for authentication.
+						There is also a small webserver for settings and even opening and locking the door</p>
+				</a>
+			</div>
 		</div>
+		<!--End of Projects-->
+
+		<!--Contacts-->
+		<div class="section" id="contacts">
+
+			<p id="title">Contact Me</p>
+			<p>I can be reached at the email:</p>
+			<a href="mailto:nicholas@nickelos.org">Nicholas@NickelOS.org</a>
+			<p>You can also fill out this contact form if you would rather not have your email visible.</p>
+			<form method="post" name="myemailform" action="contact_form.php">
+				<table>
+					<tr>
+						<td>Name or Company*:</td>
+						<td><input type="text" name="name"></td>
+					</tr>
+					<tr>
+						<td>Subject:</td>
+						<td><input type="text" name=subject><td>
+					</tr>
+					<tr>
+						<td>Contact information<br> or instructions*:</td>
+						<td><textarea name="message"></textarea></td>
+					</tr>
+				</table>
+				<input type="submit" value="Send" id="submit">
+			</form>
+		</div>
+		<!--End of Contacts-->
+
+		<!--Professional Experience-->
+		<div class="section" id="work">
+			Professional Experience
+			<!--Classroom Support-->
+			<div class="job">
+				<h4>Classroom Technicians Assistant (2014-Present)</h4>
+				<h5>George Mason ITU Classroom Technologies Dept.</h5>
+				<ul>
+					<li>Troubleshoot Network hardware and Windows issues</li>
+					<li>Troubleshoot Crestron/Extron issues</li>
+					<li>Setup classroom Technologies</li>
+				</ul>
+			</div>
+			<!--DistrictAP-->
+			<div class="job">
+				<h4>Webmaster (2014-2016)</h4>
+				<h5>DistrictAP</h5>
+				<ul>
+					<li>Managing Websites</li>
+					<li>Created Social outlets for the company</li>
+				</ul>
+			</div>
+			<!--Patriot Computers-->
+			<div class="job">
+				<h4>Sales Associate (2014)</h4>
+				<h5>George Mason University ITU Project Management Dept.</h5>
+				<ul>
+					<li>Troubleshoot technical issues</li>
+					<li>Handle Departmental Orders</li>
+				</ul>
+			</div>
+			<!--Best Buy-->
+			<div class="job">
+				<h4>Sales Associate (2013-2014)</h4>
+				<h5>Best Buy Co., Inc.</h5>
+				<ul>
+					<li>Troubleshoot technical issues</li>
+					<li>Handle sensitive customer information</li>
+					<li>Customer education on the newest technologies</li>
+				</ul>
+			</div>
+			<!--Comunity Church of Atascadero-->
+			<div class="job" id="last">
+				<h4>Sales Associate (2012-2014)</h4>
+				<h5>Community Church of Atascadero</h5>
+				<ul>
+					<li>Designed the church website</li>
+					<li>Updated the church website weekly</li>
+				</ul>
+			</div>
+		</div>
+		<!--End of Work Experience-->
 
 	</body>
 </html>

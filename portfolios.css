@@ -8,11 +8,6 @@ p{
 	font-size: 120%;
 }
 
-h2{
-	color: whitesmoke;
-	margin: 0
-}
-
 #head {
 	height: 85px;
 	background: #0099ff;
@@ -20,22 +15,33 @@ h2{
 	border-radius: 5px;
 }
 
-#nav{
+div#nav {
 	background: #0099ff;
 	position:fixed;
 	left:0; top:0; bottom: 0;
 	width: 15%;
 }
 
+div#title {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+
+div#title h3{
+	position: absolute;
+	width: 100%;
+	color: whitesmoke;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	bottom: 0;
+}
+
 div.name{
 	position: absolute;
 	bottom: 0;
 	left: 0;
-}
-
-div.title {
-	position: relative;
-	width: 100%;
 }
 
 img.selfie{
@@ -45,7 +51,7 @@ img.selfie{
 	display: block;
 }
 
-ul.nav {
+div#nav ul {
 	list-style-type: none;
 	position: absolute;
 	top: 50%;
@@ -55,7 +61,7 @@ ul.nav {
 	overflow: auto;
 }
 
-li a {
+div#nav li a {
 	display: block;
 	background-color: #0099ff; /* Cyan */
 	text-align: center;
@@ -66,58 +72,19 @@ li a {
 	cursor: pointer;
 }
 
-li a.button{
+div#nav li a.button{
 	border-bottom:2px solid #33334d;
 }
 
-#current {
+div#nav #current {
 	background-color: whitesmoke;
 	color: #00134d;
 	border-bottom: none;
 }
 
-li a:hover:not(#current) {
+div#nav li a:hover:not(#current) {
 	background-color: whitesmoke;
 	color: #00134d;
-}
-
-#temp {
-	font-size: 200%;
-}
-
-/*Main content*/
-/*this will be the container for each individual section*/
-div.section{
-	position: relative;
-	background: #272b27;
-	border-color: #10d33b;
-	border-width: thick;
-	border-style: dashed;
-	margin-top: 1%;
-	margin-left: 15%;
-	width: 85%;
-}
-
-/*First section with (Contact)*/
-div#contacts .divider{
-	position: relative;
-	width: 2%;
-	left: 49%;
-	text-align: center;
-}
-
-div#contacts .left{
-	position: absolute;
-	width:48%;
-	left:0;
-	text-align: right;
-}
-
-div#contacts .right{
-	position: absolute;
-	width:48%;
-	right:0;
-	text-align: left;
 }
 
 a{
@@ -131,7 +98,51 @@ a:visited{
 	color: #009999;
 }
 
-/*End of first section*/
+/*Main content*/
+/*this will be the container for each individual section*/
+div.section{
+	position: relative;
+	background: #272b27;
+	border-color: #10d33b;
+	border-width: thick;
+	border-style: dashed;
+	margin-top: 1%;
+	margin-left: 15%;
+	width: 85%;
+	color:whitesmoke;
+}
+
+/*About Me*/
+div#bio{
+}
+div#bio p{
+	padding:0;
+	margin:0;
+	width:100%;
+	text-align: center;
+}
+div#about .divider{
+	position: relative;
+	width: 2%;
+	left: 49%;
+	text-align: center;
+}
+
+div#about .left{
+	position: absolute;
+	width:48%;
+	left:0;
+	text-align: right;
+}
+
+div#about .right{
+	position: absolute;
+	width:48%;
+	right:0;
+	text-align: left;
+}
+
+/*End of About*/
 
 /*Skills section*/
 div#skills{
@@ -145,7 +156,7 @@ div#skills #left{
 	color: whitesmoke;
 }
 
-div#skills .skill {
+div#skills .skill{
 	border: 2px solid #9a9a9a;
   border-radius: 5px;
   background-color: whitesmoke;
@@ -190,5 +201,86 @@ div#skills .operatingSystem img{
 	margin: auto;
 	display: block;
 }
-
 /*End of Skills Section*/
+
+/*Projecs Section*/
+div#projects{
+	font-size: 120%;
+}
+div#projects h3{
+	text-align: center;
+	padding:0;
+	margin:0;
+}
+div.project a:hover{
+	background-color: #272b27;
+	color: whitesmoke;
+}
+div.project a:visited{
+	color: whitesmoke;
+}
+div.project{
+	width: 48%;
+	display:inline-block;
+}
+div.project a{
+	color: whitesmoke;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+/*End of Projects Section*/
+
+/*Contacts Section*/
+
+div#contacts p#title{
+	padding:0;
+	margin: 0;
+	width:100%;
+	text-align: center;
+}
+div#contacts a,div#contacts p{
+	padding-left: 1%;
+	margin: 0;
+}
+div#contacts form{
+	display: inline-block;
+	text-align: center;
+	padding-left: 1%;
+}
+div#contacts table{
+	color: whitesmoke;
+	text-align: right;
+}
+div#contacts textarea{
+	width: 100%;
+}
+/*End of Contacts Secton*/
+
+/*Professional Experience*/
+div#work {
+	text-align: center;
+	font-size: 120%;
+}
+
+div.job{
+	text-align: left;
+	padding-left:1%;
+}
+div.job:not(#last){
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-color: #10d33b;
+}
+
+div.job h4,div.job h5,div.job ul li{
+	color: whitesmoke;
+	margin: 0;
+	padding:0;
+}
+
+div.job ul{
+	margin-top: 0;
+}
+/*End of Professional Experience*/
